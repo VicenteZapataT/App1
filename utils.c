@@ -192,3 +192,90 @@ char* dlsp(int *size, Pizza *ordenes, int num_ordenes) {
     *size = min_pizzas;
     return peor_dia;
 }
+double apo(Pizza *ordenes, int num_ordenes) { int total_pizzas = 0; int orden_unica = 0; int seen_orders[MAX_ORDERS] = {0}; 
+
+for (int i = 0; i < num_ordenes; i++) { 
+    total_pizzas += ordenes[i].quantity; 
+ 
+    int found = 0; 
+    for (int j = 0; j < orden_unica; j++) { 
+        if (seen_orders[j] == ordenes[i].order_id) { 
+            found = 1; 
+            break; 
+        } 
+    } 
+    if (!found) { 
+        seen_orders[orden_unica++] = ordenes[i].order_id; 
+    } 
+} 
+ 
+return (double)total_pizzas / orden_unica; 
+  
+
+} double apd(Pizza *ordenes, int num_ordenes) { int total_pizzas = 0; int dia_unico = 0; char seen_days[MAX_ORDERS][11]; 
+
+for (int i = 0; i < num_ordenes; i++) { 
+    total_pizzas += ordenes[i].quantity; 
+ 
+    int found = 0; 
+    for (int j = 0; j < dia_unico; j++) { 
+        if (strcmp(seen_days[j], ordenes[i].order_date) == 0) { 
+            found = 1; 
+            break; 
+        } 
+    } 
+    if (!found) { 
+        strcpy(seen_days[dia_unico++], ordenes[i].order_date); 
+    } 
+} 
+ 
+return (double)total_pizzas / dia_unico; 
+  
+
+} char* ims(int *size, Pizza *ordenes, int num_ordenes) { char *most_used_ingredient = malloc(MAX_INGREDIENTS_LENGTH); int max_count = 0; 
+
+for (int i = 0; i < num_ordenes; i++) { 
+    for (int j = 0; j < ordenes[i].ingredients_count; j++) { 
+        int count = 0; 
+        for (int k = 0; k < num_ordenes; k++) { 
+            for (int l = 0; l < ordenes[k].ingredients_count; l++) { 
+                if (strcmp(ordenes[i].pizza_ingredients[j], ordenes[k].pizza_ingredients[l]) == 0) { 
+                    count += ordenes[k].quantity; 
+                } 
+            } 
+        } 
+        if (count > max_count) { 
+            max_count = count; 
+            strcpy(most_used_ingredient, ordenes[i].pizza_ingredients[j]); 
+        } 
+    } 
+} 
+ 
+*size = max_count; 
+return most_used_ingredient; 
+  
+
+} void hp(Pizza *ordenes, int num_ordenes) { char categories[MAX_ORDERS][MAX_PIZZA_NAME_LENGTH]; int category_counts[MAX_ORDERS] = {0}; int unique_categories = 0; 
+
+for (int i = 0; i < num_ordenes; i++) { 
+    int found = 0; 
+    for (int j = 0; j < unique_categories; j++) { 
+        if (strcmp(categories[j], ordenes[i].pizza_category) == 0) { 
+            category_counts[j] += ordenes[i].quantity; 
+            found = 1; 
+            break; 
+        } 
+    } 
+    if (!found) { 
+        strcpy(categories[unique_categories], ordenes[i].pizza_category); 
+        category_counts[unique_categories] = ordenes[i].quantity; 
+        unique_categories++; 
+    } 
+} 
+ 
+for (int i = 0; i < unique_categories; i++) { 
+    printf("%s: %d pizzas\n", categories[i], category_counts[i]); 
+} 
+  
+
+} 
