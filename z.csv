@@ -1,0 +1,21 @@
+id_pizza,id_pedido,nombre_pizza_id,cantidad,fecha_pedido,hora_pedido,precio_unitario,precio_total,tamaño_pizza,categoría_pizza,ingredientes_pizza,nombre_pizza
+1,1,hawaiana_m,1,03/01/2015,11:38:36,13.25,13.25,M,Clásica,"Jamón en rodajas; Piña; Queso Mozzarella",Pizza Hawaiana
+2,2,deluxe_clásica_m,1,12/01/2015,11:57:40,16.00,16.00,M,Clásica,"Pepperoni, Champiñones, Cebolla roja, Pimientos rojos, Tocino",Pizza Deluxe Clásica
+3,2,cinco_quesos_g,1,07/02/2015,11:57:40,18.50,18.50,G,Vegetariana,"Queso Mozzarella, Queso Provolone, Queso Gouda Ahumado, Queso Romano, Queso Azul, Ajo",Pizza Cinco Quesos
+4,3,bbq_m,2,25/02/2015,12:15:22,15.75,31.50,M,Clásica,"Pollo, Cebolla, Salsa BBQ, Queso Cheddar, Queso Mozzarella",Pizza BBQ
+5,4,mexicana_g,1,09/03/2015,12:45:10,19.00,19.00,G,Picante,"Chorizo, Jalapeños, Frijoles, Cebolla, Pimientos verdes, Queso Mozzarella",Pizza Mexicana
+6,5,cuatro_estaciones_p,3,14/03/2015,13:05:33,14.50,43.50,P,Especialidad,"Champiñones, Jamón, Aceitunas negras, Alcachofas, Queso Mozzarella",Pizza Cuatro Estaciones
+7,6,carbonara_m,1,28/04/2015,13:20:45,17.25,17.25,M,Especialidad,"Tocino, Huevo, Salsa Carbonara, Queso Parmesano, Queso Mozzarella",Pizza Carbonara
+8,7,mariscos_g,2,11/05/2015,14:00:05,20.00,40.00,G,Especialidad,"Camarón, Pulpo, Mejillones, Ajo, Queso Mozzarella",Pizza de Mariscos
+9,8,vegetariana_m,1,19/06/2015,14:30:50,15.00,15.00,M,Vegetariana,"Tomate, Espinaca, Pimientos amarillos, Aceitunas verdes, Cebolla roja, Queso Mozzarella",Pizza Vegetariana
+10,9,pepperoni_xl,1,06/07/2015,15:10:15,22.00,22.00,XL,Clásica,"Pepperoni, Queso Mozzarella, Salsa de Tomate",Pizza Pepperoni Extra Grande
+11,10,hawaiana_m,2,14/07/2015,16:05:22,13.25,26.50,M,Clásica,"Jamón en rodajas, Piña, Queso Mozzarella",Pizza Hawaiana
+12,11,deluxe_clásica_m,1,23/08/2015,17:30:10,16.00,16.00,M,Clásica,"Pepperoni, Champiñones, Cebolla roja, Pimientos rojos, Tocino",Pizza Deluxe Clásica
+13,12,mexicana_g,1,05/09/2015,12:20:33,19.00,19.00,G,Picante,"Chorizo, Jalapeños, Frijoles, Cebolla, Pimientos verdes, Queso Mozzarella",Pizza Mexicana
+14,13,cuatro_estaciones_p,2,30/09/2015,18:45:22,14.50,29.00,P,Especialidad,"Champiñones, Jamón, Aceitunas negras, Alcachofas, Queso Mozzarella",Pizza Cuatro Estaciones
+15,14,bbq_m,1,07/10/2015,14:55:18,15.75,15.75,M,Clásica,"Pollo, Cebolla, Salsa BBQ, Queso Cheddar, Queso Mozzarella",Pizza BBQ
+16,15,carbonara_m,3,18/10/2015,19:25:37,17.25,51.75,M,Especialidad,"Tocino, Huevo, Salsa Carbonara, Queso Parmesano, Queso Mozzarella",Pizza Carbonara
+17,16,pepperoni_xl,2,02/11/2015,20:15:40,22.00,44.00,XL,Clásica,"Pepperoni, Queso Mozzarella, Salsa de Tomate",Pizza Pepperoni Extra Grande
+18,17,vegetariana_m,1,27/12/2015,11:10:29,15.00,15.00,M,Vegetariana,"Tomate, Espinaca, Pimientos amarillos, Aceitunas verdes, Cebolla roja, Queso Mozzarella",Pizza Vegetariana
+19,18,vegetariana_m,1,28/12/2015,11:20:29,15.00,15.00,M,Vegetariana,"Tomate, Espinaca, Pimientos amarillos, Aceitunas verdes, Cebolla roja, Queso Mozzarella",Pizza Vegetariana
+18,17,vegetariana_m,1,01/01/2016,14:10:29,15.00,15.00,M,Vegetariana,"Tomate, Espinaca, Pimientos amarillos, Aceitunas verdes, Cebolla roja, Queso Mozzarella",Pizza Vegetariana
